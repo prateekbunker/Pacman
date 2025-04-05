@@ -1,10 +1,6 @@
 # Multi-agent Pacman
 
-This project is widely inspired by the [Berkeley Pacman AI project](http://ai.berkeley.edu/project_overview.html).
-
-The goal of this project is the same: provide an AI sandbox for developers to implement agents that can play Pacman.
-
-The project is working with python3 and [pygame 2.1.3](https://github.com/pygame/pygame/releases/tag/2.1.3).
+The project is working with python3.
 
 This environment aims to be simple and extensible.
 - It is simple because there are not many dependencies and a straightforward way to implement your own agents.
@@ -12,12 +8,10 @@ This environment aims to be simple and extensible.
 
 ## Installation
 
-- Download and install [python 3.10](https://www.python.org/downloads/) (_NB: as of 2023-20-02, the project is not working with python 3.11_) and install [pipenv](https://pypi.org/project/pipenv/).
-
 - Clone the repository
 
 ```bash
-git clone https://github.com/tritons-io/multi-agent-pacman.git
+git clone https://github.com/prateekbunker/Pacman
 ```
 
 - Install the dependencies
@@ -44,12 +38,6 @@ It will install the dependencies in a virtual environment where you can add your
 | `-C`, `--clipping-bug`    | Enable the clipping bug to check if the AI learn to exploit it            | False                  |
 | `--log-level`             | Log level to use (DEBUG, INFO, WARNING, ERROR)                            | `INFO`                 |
 
-### Clipping bug
-
-With the option `-C`, the clipping bug is enabled. This bug is a bug made accidentally while developing this environment.
-You will see that if Pacman is side by side with a ghost, and they switch positions, the ghost will go right through Pacman without killing him.
-
-You can enable this bug to check if your AI is able to learn to exploit it.
 
 ## Layouts
 
@@ -133,13 +121,5 @@ The PacmanState also contains the following information:
 - `state.score` is the current score of the game.
 - `state.turn` is the number of turns that have been played since the beginning of the game, in other words the number of actions that have been performed by each agent.
 
-## Contributing
-
-If you want to contribute to this project, you can fork it and create a merge request, they are always welcome.
-The main upgrades that are needed are:
-- Record and replay system
-- Change ghost behaviour:
-  - Pinky should use a better way to calculate the projected position of Pacman
-  - Inky should use its original game behaviour (draw a line between Blinky and Pacman, double the distance and go there)
-
-You can also create an issue if you find a bug or want to suggest a feature: [https://github.com/tritons-io/multi-agent-pacman/issues](https://github.com/tritons-io/multi-agent-pacman/issues)
+## Demo
+![Pacman Screenshot]("C:\Users\Bunker\OneDrive\Pictures\Screenshots 1\demo.png")
