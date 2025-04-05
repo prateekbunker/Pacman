@@ -121,3 +121,5 @@ The PacmanState also contains the following information:
 - `state.score` is the current score of the game.
 - `state.turn` is the number of turns that have been played since the beginning of the game, in other words the number of actions that have been performed by each agent.
 
+## Demo
+![Pacman Screenshot]("C:\Users\Bunker\OneDrive\Pictures\Screenshots 1\demo.png")
