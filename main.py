@@ -35,7 +35,7 @@ parser = argparse.ArgumentParser(
 parser.add_argument('-n', '--number-of-games', type=int, help='The number of games to play', default=1)
 parser.add_argument('-G', '--no-graphics', action='store_true', help='Disable rendering', default=False)
 parser.add_argument('-l', '--layout', help='The layout to use', default='layouts/original.lay')
-parser.add_argument('-a', '--agent', help='The agent to use, must be a class in pacman_agents.py', default='RightTurnAgent')
+parser.add_argument('-a', '--agent', help='The agent to use, must be a class in pacman_agents.py', default='MonCherryAgent')
 parser.add_argument('-g', '--ghost-agent', help='If set, uses this agent for all ghosts', default=None)
 parser.add_argument('-C', '--clipping-bug', action='store_true', help='Enable the clipping bug', default=False)
 
